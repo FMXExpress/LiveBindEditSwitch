@@ -1,0 +1,185 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Slider: TTMSFMXSlider
+    DisableFocusEffect = False
+    Position.X = 384.000000000000000000
+    Position.Y = 144.000000000000000000
+    TabOrder = 1
+    Size.Width = 75.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    AdaptToStyle = True
+    OnStateChanged = SliderStateChanged
+  end
+  object LG: TTMSFMXLiveGrid
+    DisableFocusEffect = False
+    Position.X = 144.000000000000000000
+    Position.Y = 224.000000000000000000
+    TabOrder = 2
+    Size.Width = 370.000000000000000000
+    Size.Height = 118.000000000000000000
+    Size.PlatformDefault = False
+    ColumnCount = 2
+    RowCount = 2
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Options.Styling.AdaptToStyle = True
+    AdaptToStyle = True
+    Version = '2.2.8.1'
+    Fill.Kind = Solid
+    Stroke.Kind = Solid
+    TopRow = 1
+    LeftCol = 1
+    Columns = <
+      item
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.StyleExt = {00070000000000000004000000}
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.StyleExt = {00070000000000000004000000}
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.StyleExt = {00070000000000000004000000}
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.StyleExt = {00070000000000000004000000}
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.StyleExt = {00070000000000000004000000}
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end>
+  end
+  object SliderEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Text = '1'
+    Position.X = 192.000000000000000000
+    Position.Y = 152.000000000000000000
+    OnValidate = SliderEditValidate
+  end
+  object FDMemTable1: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'FDMemTable1Field1'
+        DataType = ftString
+        Size = 20
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvPersistent, rvSilentMode]
+    ResourceOptions.Persistent = True
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 240
+    Top = 56
+    Content = {
+      414442530F0081052B010000FF00010001FF02FF03040016000000460044004D
+      0065006D005400610062006C006500310005000A0000005400610062006C0065
+      00060000000000070000080032000000090000FF0AFF0B040022000000460044
+      004D0065006D005400610062006C00650031004600690065006C006400310005
+      0022000000460044004D0065006D005400610062006C00650031004600690065
+      006C00640031000C00010000000E000D000F0014000000100001110001120001
+      130001140001150001160022000000460044004D0065006D005400610062006C
+      00650031004600690065006C0064003100170014000000FEFEFF18FEFF19FEFF
+      1AFF1B1C00000000001E001D00FF1F00000100000031FEFEFEFEFEFF20FEFF21
+      220004000000FF23FEFEFE0E004D0061006E0061006700650072001E00550070
+      0064006100740065007300520065006700690073007400720079001200540061
+      0062006C0065004C006900730074000A005400610062006C00650008004E0061
+      006D006500140053006F0075007200630065004E0061006D0065000A00540061
+      00620049004400240045006E0066006F0072006300650043006F006E00730074
+      007200610069006E00740073001E004D0069006E0069006D0075006D00430061
+      00700061006300690074007900180043006800650063006B004E006F0074004E
+      0075006C006C00140043006F006C0075006D006E004C006900730074000C0043
+      006F006C0075006D006E00100053006F00750072006300650049004400180064
+      00740041006E007300690053007400720069006E006700100044006100740061
+      0054007900700065000800530069007A00650014005300650061007200630068
+      00610062006C006500120041006C006C006F0077004E0075006C006C00080042
+      0061007300650014004F0041006C006C006F0077004E0075006C006C0012004F
+      0049006E0055007000640061007400650010004F0049006E0057006800650072
+      0065001A004F0072006900670069006E0043006F006C004E0061006D00650014
+      0053006F007500720063006500530069007A0065001C0043006F006E00730074
+      007200610069006E0074004C00690073007400100056006900650077004C0069
+      00730074000E0052006F0077004C00690073007400060052006F0077000A0052
+      006F0077004900440016007200730055006E006300680061006E006700650064
+      001A0052006F0077005000720069006F0072005300740061007400650010004F
+      0072006900670069006E0061006C001800520065006C006100740069006F006E
+      004C006900730074001C0055007000640061007400650073004A006F00750072
+      006E0061006C001200530061007600650050006F0069006E0074000E00430068
+      0061006E00670065007300}
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 152
+    Top = 56
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 52
+    Top = 53
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = LG
+      Columns = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'FDMemTable1Field1'
+      Control = SliderEdit
+      Track = True
+    end
+  end
+end
